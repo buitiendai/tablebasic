@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Form Đơn Giản</title>
+</head>
+<style>
+    form{
+        background-color: aquamarine;
+        padding: 30px;
+    }
+    table{
+        background-color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 5px;
+    }
+    h2{
+        background-color: orangered;
+        color: white;
+    }
+    .coban{
+        text-align: right;
+        color: blue;
+        font-size: 16px;
+    }
+    td{
+        width: 150px;
+        padding: 5px;
+    }
+    #yourname{
+        width: 300px;
+    }
+    #email{
+        width: 300px;
+    }
+    input{
+        padding: 5px;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <th colspan="4"><h2>SỞ THÍCH CỦA BẠN</h2></th>
+            </tr>
+            <tr>
+                <td class="coban"><label for="yourname">Họ và tên</label></td>
+                <td colspan="3"><input  type="text" name="yourname" id="yourname"><br></td>
+            </tr>
+            <tr>
+                <td class="coban"><label for="email">Email</label></td>
+                <td colspan="3"><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td class="coban"><label for="hobby">Sở thích</label></td>
+                <td><input type="checkbox"> Thể thao</td>
+                <td><input type="checkbox"> Âm nhạc</td>
+                <td><input type="checkbox"> Đọc sách</td>
+            </tr>
+            <tr>
+                <td class="coban"></td>
+                <td><input type="checkbox"> Lướt web</td>
+                <td><input type="checkbox"> Chơi game</td>
+                <td><input type="checkbox"> Điện ảnh</td>
+            </tr>
+            <tr>
+                <td class="coban"></td>
+                <td><input type="checkbox"> Du lịch</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <input type="submit" value="Gửi thông tin">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
