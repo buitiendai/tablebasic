@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+</head>
+<style>
+    body{
+
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
+    #banner{
+        width: 1200px;
+        display: flex;
+
+    }
+    #banner input{
+        width: 380px;
+    }
+    #logo{
+        width: 45px;
+        float: left;
+    }
+    #sologan p{
+        margin-top: 3px;
+    }
+    #search{
+        float: left;
+        margin-top: 10px;
+    }
+    #search input{
+        padding: 3px;
+    }
+    #sign_in{
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    .wapper{
+        display: flex;
+        width: 100%;
+    }
+    #navi{
+        width: 250px;
+        float: left;
+        background-color: rgb(213, 243, 233);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        max-height: 1000px;
+    }
+    ul{
+        list-style-type: none;
+        line-height: 22px;
+        margin-left: -10px;
+    }
+    #content{
+        width: 950px;
+
+    }
+    .menu{
+        width: 950px;
+    }
+    .menu div ul li{
+        float: left;
+        margin-right: 10px;
+    }
+    .btn_fc li{
+        float: left;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    .link_content li{
+        float: left;
+    }
+    .baiviet li{
+        float: left;
+        margin-right: 10px;
+        margin-top: -13px;
+    }
+    .trogiup li{
+        float: left;
+        margin-right: 10px;
+        margin-top: -13px;
+    }
+    .feature{
+        width: 950px;
+        height: 1400px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .detail{
+        width: 48%;
+        height: 450px;
+        float: left;
+        margin-right: 18px;
+        margin-bottom: 18px;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+    }
+    .detail table{
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .list_detail li{
+        float: left;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    .images_new{
+        width: 929px;
+        height: 450px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .images_detail{
+        border: 1px solid lightgrey;
+        padding: 15px;
+    }
+    .edit_content{
+        width: 929px;
+        height: 600px;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content_detail{
+        border: 1px solid lightgrey;
+        padding: 15px;
+    }
+    .footer{
+        width: 929px;
+        height: 700px;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer_detail{
+        padding: 15px;
+        border-top: 1px dotted lightgray;
+    }
+    #footer{
+        width: 1200px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="banner">
+            <div id="logo"><img src="images/wikipedia.png" alt="logo wikipedia" style="width: 40px;"></div>
+            <div id="sologan" style="width: 250px;">
+                <p><b>Wikipedia</b><br>Bách khoa toàn thư mở</p>
+            </div>
+            <div id="search" style="width: 400px"><input type="text" name="search" placeholder="Tìm kiếm Wikipedia"></div>
+            <div id="sign_in" style="width: 400px;">Tạo tài khoản</div>
+        </div>
+        <div class="wapper">
+            <div id="navi">
+                <div>
+                    <ul>
+                        <li>Trang chính</li>
+                        <li>Nội dung chọn lọc</li>
+                        <li>Bài viết ngẫu nhiên</li>
+                        <li>Thay đổi gần đây</li>
+                        <li>Quyên góp</li>
+                    </ul>
+                    <ul>
+                        <li>Tương tác</li>
+                        <hr style="width:90%; margin-left: 0px;">
+                        <li>Hướng dẫn</li>
+                        <li>Giới thiệu Wikipedia</li>
+                        <li>Cộng đồng</li>
+                        <li>Thảo luận chung</li>
+                        <li>Giúp sử dụng</li>
+                        <li>Liên lạc</li>
+                        <li>Tải tập tin lên</li>
+                    </ul>
+                    <ul>
+                        <li>Gõ tiếng Việt</li>
+                        <hr style="width:90%; margin-left: 0px;">
+                        <li><input type="radio" checked="checked">Tự động [F9]</li>
+                        <li><input type="radio">Telex (?)</li>
+                        <li><input type="radio">VNI (?)</li>
+                        <li><input type="radio">VIQR (?)</li>
+                        <li><input type="radio">VIQR*</li>
+                        <li><input type="radio">Tắt [F12]</li>
+                        <hr style="width:90%; margin-left: 0px;">
+                        <li><input type="checkbox" checked="checked">Bỏ dấu kiểu cũ [F7]</li>
+                        <li><input type="checkbox" checked="checked">Đúng chính tả [F8]</li>
+                    </ul>
+                    <ul>
+                        <li>Công cụ</li>
+                        <hr style="width:90%; margin-left: 0px;">
+                        <li>Các liên kết đến đây</li>
+                        <li>Thay đổi liên quan</li>
+                        <li>Trang đặc biệt</li>
+                        <li>Liên kết thường trực</li>
+                        <li>Thông tin trang</li>
+                        <li>Khoản mục Wikidata</li>
+                    </ul>
+                    <ul>
+                        <li>In và xuất</li>
+                        <hr style="width:90%; margin-left: 0px;">
+                        <li>Tạo một quyển sách</li>
+                        <li>Tải về dưới dạng PDF</li>
+                        <li>Bản để in ra</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="menu" style="font-family:  Arial, Helvetica, sans-serif; font-size: 13px; height: 50px;">
+                    <div id="a" style="float: left; width: 50%; border-bottom: 1px solid lightgray; margin-left: 20px;">
+                        <ul>
+                            <li >Trang chính</li>
+                            <li >Thảo luận</li>
+                        </ul>
+                    </div>
+                    <div id="b" style="float: right; width: 45%; border-bottom: 1px solid lightgray; margin-left: 20px;">
+                        <ul>
+                            <li >Đọc</li>
+                            <li >Xem mã nguồn</li>
+                            <li >Xem lịch sử</li>
+                            <li >Thêm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="statis" style="width: 929px; height: 184px; border: 1px solid rgb(172, 171, 171); margin-left: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">
+                    <div style="padding-top:30px; height: 110px; background-color: rgb(233, 231, 231);">
+                        <div style="width: 50%; float: left; text-align: center;">
+                            <p style="font-size: 20px;">WIKIPEDIA TIẾNG VIỆT</p>
+                            <p>Bạn chính là tác giả của Wikipedia</p>
+                       </div>
+                       <div style="width: 50%; text-align: center; float: right;">
+                            <p>1.275.426 bài viết và 877.841 thành viên</p>
+                            <div>
+                                <ul class="btn_fc">
+                                    <li>Tạo bài</li>
+                                    <li>Sửa bài</li>
+                                    <li>Tải hình</li>
+                                    <li>Quy tắc</li>
+                                    <li>Đặt câu hỏi</li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                   <div style="width: 929px; display: flex;">
+                        <table style="width: 100%; height: 45px; border-collapse: collapse; border: 1px solid lightgray;">
+                                <td width="10%" style="text-align: right; font-weight: bold;">Bài viết:</td>
+                                <td width="40%" style="text-align: left;">
+                                    <ul class="baiviet" style="margin-left: -35px;">
+                                        <li>Tra cứu</li>
+                                        <li>Bài mới</li>
+                                        <li>Hỏi đáp</li>
+                                        <li>Thỉnh cầu</li>
+                                        <li>Thư viện</li>
+                                    </ul>
+                                </td>
+                                <td width="10%" style="text-align: right; font-weight: bold;">Trợ giúp:</td>
+                                <td width="40%">
+                                    <ul class="trogiup" style="margin-left: -35px;">
+                                        <li>FAQ</li>
+                                        <li>Giúp đỡ</li>
+                                        <li>Hướng dẫn</li>
+                                        <li>Chỗ thử</li>
+                                        <li>Guestbook</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                   </div>
+                </div>
+                <div class="feature">
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 10%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 90%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Bài viết chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px;">Biểu tình bài Nhật tại Trung Quốc năm 2012 là một loạt các cuộc biểu tình bài Nhật Bản được tổ chức ở các thành phố lớn tại Trung Quốc và Đài Loan trong khoảng thời gian từ tháng 8 đến tháng 9 năm 2012. Nguyên nhân chính của các cuộc biểu tình là sự leo thang tranh chấp quần đảo Senkaku giữa Trung Quốc và Nhật Bản xoay quanh thời điểm kỷ niệm Sự kiện Phụng Thiên năm 1931, một xúc tác de facto để Nhật Bản xâm lược Mãn Châu, đỉnh điểm là một thất bại bẽ mặt của Trung Quốc và một chiến thắng quyết định của Nhật Bản trong việc hợp nhất và sáp nhập Mãn Châu.
+                                    <img src="/images/wikipedia.png" alt="images" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="images_news">
+                    <div class="images_detail" style="margin-left: 20px;">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 5%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 95%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Hình ảnh chọn lọc</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="line-height: 23px; padding-bottom: 20px; text-align: center;">
+                                    <img src="/images/wikipedia.png" alt="images" style="height: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Lưu trữ</li>
+                                        <li>Thêm bài viết chọn lọc</li>
+                                        <li>Ứng cử viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="edit_content">
+                    <div class="content_detail">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 5%;background-color: rgb(241, 241, 199); height: 35px;">icon</td>
+                                <td style="width: 95%; font-weight: bold; background-color: rgb(241, 241, 199); height: 35px;">Cải thiện nội dung</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table style="width: 100%">
+                                        <tr>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                            <td rowspan="4" style="vertical-align: top;">
+                                                <div style="padding: 15px; background-color:lightgrey; margin: 5px -5px 5px -5px; height: 410px; line-height: 20px;">
+                                                    <p style="font-weight: bold;">Tham gia Wikipedia</p>
+                                                    <p>Wikipedia là dự án bách khoa toàn thư mở, đa ngôn ngữ mà mọi người đều có thể tham gia đóng góp. Mục tiêu của Wikipedia là xây dựng một bách khoa toàn thư hoàn chỉnh, chính xác và trung lập.</p>
+                                                    <p>Sự phát triển của Wikipedia tiếng Việt phụ thuộc vào sự tham gia của bạn. Dù là tạo một bài mới, thêm nội dung, sửa lỗi chính tả hay bổ sung hình ảnh minh họa, thì bạn cũng đã góp phần xây dựng để Wikipedia tiếng Việt ngày một phát triển.</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                            <td style="width: 30%; height: 100px; line-height: 30px;"><p style="margin: 5px 10px 5px -5px; background-color: lightgray; padding: 15px; border-bottom: 5px solid green;"><b style="font-size: 25px;">3.476</b> bài<br>cần kiwi hóa</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="border-top: 1px solid lightgrey;">
+                                    <ul class="list_detail">
+                                        <li>Quản lý Wikipedia</li>
+                                        <li>Liên hệ bảo quản viên</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer_detail">
+                        <table>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p>Đây là Wikipedia phiên bản tiếng Việt. Hiện nay, Wikipedia còn có nhiều phiên bản ngôn ngữ khác, dưới đây là các phiên bản ngôn ngữ lớn nhất.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p>Đây là Wikipedia phiên bản tiếng Việt. Hiện nay, Wikipedia còn có nhiều phiên bản ngôn ngữ khác, dưới đây là các phiên bản ngôn ngữ lớn nhất.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p>Đây là Wikipedia phiên bản tiếng Việt. Hiện nay, Wikipedia còn có nhiều phiên bản ngôn ngữ khác, dưới đây là các phiên bản ngôn ngữ lớn nhất.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p>Đây là Wikipedia phiên bản tiếng Việt. Hiện nay, Wikipedia còn có nhiều phiên bản ngôn ngữ khác, dưới đây là các phiên bản ngôn ngữ lớn nhất.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%; border-top: 1px dotted lightgray">
+                            <tr>
+                                <td colspan="4" style="text-align: center;">
+                                    <p style="padding: 30px;">
+                                        Wikipedia trực thuộc Wikimedia Foundation, một tổ chức phi lợi nhuận cũng đồng thời điều hành nhiều dự án khác. Các dự án này hoặc là đa ngôn ngữ hoặc đã có phiên bản tiếng Việt.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                            </tr>
+                            <tr>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                                <td style="width:25%; height: 50px;"><img src="/images/wikipedia.png" style="height: 40px">Text text text</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footer" style="height: 100px;">
+            <p>
+                Văn bản được phát hành theo Giấy phép Creative Commons Ghi công–Chia sẻ tương tự; có thể áp dụng điều khoản bổ sung. Với việc sử dụng trang web này, bạn chấp nhận Điều khoản Sử dụng và Quy định quyền riêng tư. Wikipedia® là thương hiệu đã đăng ký của Wikimedia Foundation, Inc., một tổ chức phi lợi nhuận.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
